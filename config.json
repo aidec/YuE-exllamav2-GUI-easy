@@ -1,0 +1,47 @@
+{
+    "models": {
+        "stage1_model": "F:/project/AI/YuE/YuE-for-windows/YuEGP/YuE-exllamav2/Model/YuE-s1-7B-anneal-en-cot-exl2",
+        "stage2_model": "F:/project/AI/YuE/YuE-for-windows/YuEGP/YuE-exllamav2/Model/YuE-s2-1B-general-exl2",
+        "stage1_use_exl2": true,
+        "stage2_use_exl2": true
+    },
+    "environment": {
+        "venv_path": "F:/project/AI/YuE/YuE-for-windows/YuEGP/YuE-exllamav2/myevnv",
+        "python_cmd": "python",
+        "output_dir": "outputs"
+    },
+    "generation": {
+        "max_new_tokens": 3000,
+        "run_n_segments": 1,
+        "stage2_batch_size": 4,
+        "stage1_cache_size": 16384,
+        "stage2_cache_size": 32768,
+        "seed": 2210245567
+    },
+    "audio_prompt": {
+        "use_audio_prompt": false,
+        "audio_prompt_path": "",
+        "prompt_start_time": 0.0,
+        "prompt_end_time": 30.0
+    },
+    "output": {
+        "output_filename": "YuE_generated_20250207_022536"
+    },
+    "recommended_settings": {
+        "default": {
+            "stage2_cache_size": 32768,
+            "stage1_cache_size": 16384
+        },
+        "low_vram": {
+            "stage2_cache_size": 16384,
+            "stage1_cache_size": 8192
+        },
+        "high_quality": {
+            "stage2_cache_size": 65536,
+            "stage1_cache_size": 32768
+        }
+    },
+    "venv_path": "F:/project/AI/YuE/YuE-for-windows/YuEGP/YuE-exllamav2/myevnv",
+    "python_cmd": "python",
+    "stage1_model": "F:/project/AI/YuE/YuE-for-windows/YuEGP/YuE-exllamav2/Model/YuE-s1-7B-anneal-en-cot-exl2-8"
+}
